@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Pretendard-Regular';
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body {
+    height: 7000px;
+}
+
+#intro {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    font-size: 16pt;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#logo {
+    margin-top: 10px;
+    font-size: 4rem;
+}
+
+#logoimg {
+    position: fixed;
+    left: 5%;
+    top: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.center video {
+    margin-top: 20px;
+}
+
+.plan {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    margin-top: 300px;
+    text-align: center;
+    font-size: 16pt;
+}
+
+.image-container {
+    display: flex;
+    height: 200px;
+    position: relative;
+    justify-content: center;
+}
+
+.image-container img {
+    position: absolute;
+    bottom: -100px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.image-container img.visible {
+    bottom: 0;
+    opacity: 1;
+}
+
+#bubble {
+    margin-top: 70px;
+    text-align: center;
+}
+
+#bubble img {
+    height: 180px;
+    vertical-align: bottom;
+}
+
+.lineh {
+    line-height: 2;
+}
+
+#service {
+    margin-top: 70px;
+}
+
+.left {
+    text-align: left;
+}
+
+.service2 {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.title {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    font-size: 20pt;
+    margin-bottom: 30px;
+}
+
+.title2 {
+    position: absolute;
+    font-family: 'NeoDunggeunmoPro-Regular';
+    color: white;
+    font-size: 20pt;
+    margin: 50px 0 0 10%;
+    z-index: 2;
+}
+
+.left2 {
+    text-align: left;
+    margin-left: 10%;
+}
+
+#making {
+    overflow: hidden;
+    height: fit-content;
+}
+
+#making img {
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#making img:hover {
+    transform: scale(1.1);
+}
+
+#btn {
+    background-color: #f45b80;
+    border: solid 1px #f45b80;
+    text-align: center;
+    margin: 40px auto;
+    padding: 10px 0;
+    color: white;
+    width: 160px;
+    border-radius: 50px;
+    transition: all ease 0.2s;
+}
+
+#btn:hover {
+    background-color: white;
+    border: solid 1px #f45b80;
+    text-align: center;
+    margin: 40px auto;
+    padding: 10px 0;
+    color: #f45b80;
+    width: 160px;
+    border-radius: 50px;
+}
+
+header {
+    position: fixed;
+}
+
+#menu {
+    float: right;
+    margin-right: 15%;
+    margin-top: -4.5%;
+}
+
+#menubtn {
+    position: fixed;
+    background-color: #f45b80;
+    border: solid 1px #f45b80;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    width: 160px;
+    border-radius: 50px;
+    opacity: 1;
+    transition: opacity 0.5s;
+    transition: all ease 0.2s;
+}
+
+#menubtn:hover {
+    background-color: white;
+    border: solid 1px #f45b80;
+    text-align: center;
+    padding: 10px 0;
+    color: #f45b80;
+    width: 160px;
+    border-radius: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: #202020;
+    height: 150px;
+}
+
+footer div {
+    margin: 150px 0 0 10%;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 10pt;
+    color: white;
+}
